@@ -10,6 +10,9 @@ app.scripts.config.serve_locally = True
 app.layout = html.Div([
     ace_components.Ace(
         id='editor',
+        focus=True,
+        mode='python',
+        theme='solarized_dark',
         value="def say_hi():\n    print('Hello, world!')",
     ),
     html.Button('Submit', id='submit'),
